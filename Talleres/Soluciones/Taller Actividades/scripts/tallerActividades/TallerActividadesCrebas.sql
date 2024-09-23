@@ -1,36 +1,36 @@
 /*==============================================================*/
 /* DBMS name:      PostgreSQL 9.x                               */
-/* Created on:     6/09/2024 1:05:09 a. m.                      */
+/* Created on:     6/09/2024 1:05:09 a.ï¿½m.                      */
 /*==============================================================*/
 
 
-drop index RESPONSABLE_ACTIVIDAD_FK;
+drop index if exists RESPONSABLE_ACTIVIDAD_FK;
 
-drop index ACTIVIDAD_PK;
+drop index if exists ACTIVIDAD_PK;
 
-drop table ACTIVIDAD;
+drop table if exists ACTIVIDAD;
 
-drop index INCONVENIENTE_PROGRESO_FK;
+drop index if exists INCONVENIENTE_PROGRESO_FK;
 
-drop index TIPOINC_INCONVENIENTE_FK;
+drop index if exists TIPOINC_INCONVENIENTE_FK;
 
-drop index INCONVENIENTE_PK;
+drop index if exists INCONVENIENTE_PK;
 
-drop table INCONVENIENTE;
+drop table if exists INCONVENIENTE;
 
-drop index ACTIVIDAD_PROGRESO_FK;
+drop index if exists ACTIVIDAD_PROGRESO_FK;
 
-drop index PROGRESO_PK;
+drop index if exists PROGRESO_PK;
 
-drop table PROGRESO;
+drop table if exists PROGRESO;
 
-drop index RESPONSABLE_PK;
+drop index if exists RESPONSABLE_PK;
 
-drop table RESPONSABLE;
+drop table if exists RESPONSABLE;
 
-drop index TIPO_INCONVENIENTE_PK;
+drop index if exists TIPO_INCONVENIENTE_PK;
 
-drop table TIPO_INCONVENIENTE;
+drop table if exists TIPO_INCONVENIENTE;
 
 /*==============================================================*/
 /* Table: ACTIVIDAD                                             */
