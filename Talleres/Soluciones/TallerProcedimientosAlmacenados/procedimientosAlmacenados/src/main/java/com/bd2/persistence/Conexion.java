@@ -16,6 +16,7 @@ public class Conexion {
         this.properties = new Properties();
         try(InputStream input = this.getClass().getClassLoader().getResourceAsStream("postgres.properties")){
             properties.load(input);
+            //properties.setProperty("escapeSyntaxCallMode", "call");
         }catch (IOException e){
             System.err.println(e.getMessage());
         }
